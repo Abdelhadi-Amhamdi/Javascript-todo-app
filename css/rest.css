@@ -1,0 +1,85 @@
+
+body{
+    /* background: linear-gradient(
+        rgb(46, 168, 238),
+        rgb(12, 118, 180),
+        rgb(1, 46, 145)
+    ); */
+    background-color: white;
+    /* background-image: url("/assets/10.jpg")!important; */
+    background-size: cover;
+    height: 100vh;
+}
+i.fa-star{
+    position: absolute;
+    color: black;
+    display: block;
+    pointer-events: none;
+    animation:animate 5s linear infinite;
+}
+.stars {
+    position: absolute;
+
+}
+.content{
+    margin-top: 2%;
+    
+    
+}
+.edit-form {
+    display: none;
+}
+.show {
+   display: block;
+   position: fixed;
+   z-index: 1;
+   width: 500px;
+   height: 200px;
+   background: white;
+   box-shadow: black 1px 4px 10px;
+   top: 35%;
+   left: 35%;
+   text-align: center;
+   padding: 50px 10px;
+}
+.editb{
+    margin-top: 10px;
+}
+.completed {
+    opacity: 0.3;
+    text-decoration: line-through;
+}
+.songOff {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 300px;
+    height: 200px;
+    background: white;
+    box-shadow: black 1px 4px 10px;
+    top: 35%;
+    left: 35%;
+    text-align: center;
+    padding: 50px 0px;
+}
+.songStop{
+    color: white;
+}
+
+@keyframes animate
+{
+    0%{
+        transform: scale(0) translateY(0);
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1) translateY(-200%);
+        opacity: 0;
+    }
+}

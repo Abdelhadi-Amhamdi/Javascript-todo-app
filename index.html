@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vanila</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/rest.css">
+    <audio class="audio" src="./assets/a_6.mp3" aria-disabled="true"></audio>
+   
+</head>
+<body>
+    <div class="stars">
+
+    </div>
+    
+    <div class="container content">
+        
+
+        <div class="row">
+
+            <div class="col-md-6 section-todos" >
+                <form class="form-group">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input 
+                                type="text" 
+                                class="todo-input form-control"
+                                placeholder="add your missions from here..." />
+                        </div>
+                        <div class="col-md-6">
+                            <button type="submit"  class="todo-button btn btn-primary btn-block">
+                                add
+                                <i class="fa fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <select name="todos" class="filter-todo form-control">
+                                <option value="all">All</option>
+                                <option value="completed">Completed</option>
+                                <option value="uncompleted">Uncompleted</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="edit-form">
+                    <form class="form group">
+                        <input type="text" class="form-control editTodo">
+                        <button type="submit" class="editb btn btn-warning">edit</button>
+                    </form>
+                </div>
+                
+
+                <div class="todo-container">
+                    <ul class="todo-list">
+                        
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="row">
+
+                    <div class="col-md-12 clock">
+                        <h1>clock</h1>
+                        <hr>
+                        <div class="clock-box">
+                            <h1 class="time">Fri, 20 Nov 2020 15:28:44 GMT</h1>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-md-12 counter">
+                        <h1>Counter</h1>
+                        <hr>
+                        
+                        <div class="row">
+                            <div class="col-md-4 buttons">
+                                <form class="form-group">
+                                    <input 
+                                        type="text" 
+                                        class="form-control delay-inp"
+                                        placeholder="Set time">
+                                    <button class="btn btn-primary start">Start</button>
+                                </form>
+                                <button class="btn btn-primary stop">Stop</button>
+                            </div>
+                            <div class="col-md-8 circle">
+                                <div class="counter-circle">
+                                    00:00:0<span class="zero">0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="songOff">
+        <h1>stop the song!</h1>
+        <button class="btn btn-warning songStop">Stop Song!</button>
+    </div>
+
+
+<!-- <span id="chronotime">0:00:00:000</span> 
+<form name="chronoForm">
+    <input type="button" name="startstop" value="start!" onClick="chronoStart()" />
+    <input type="button" name="reset" value="reset!" onClick="chronoReset()" />
+</form> -->
+    
+    
+
+
+    <!-- <script src="./scipts/animation.js"></script> -->
+    <script src="./scipts/todo.js"></script>
+    <script src="./scipts/time.js"></script>
+    <script src="./scipts/counter.js"></script>
+</body>
+</html>
